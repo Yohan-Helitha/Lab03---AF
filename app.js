@@ -1,11 +1,13 @@
 // FILE SYSTEM
 const fs = require('fs');
 
-fs.writeFile('file.txt', 'Hello World!', function (err) {
+//write -file
+fs.writeFile('file.txt', 'Hello! Edited by Inothma Y.M.A(IT23548596)', function (err) {
   if (err) throw err;
   console.log('File saved!');
 });
 
+//read-file
 fs.readFile('file.txt', 'utf8', function (err, data) {
   if (err) throw err;
   console.log(data);
